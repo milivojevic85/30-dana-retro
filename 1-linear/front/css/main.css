@@ -132,3 +132,28 @@ header hgroup h5 {
   background-color: #60916c;
   cursor: pointer;
 }
+
+.blog {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.blog article {
+  flex: 0 0 48%;
+  text-align: center;
+}
+.blog article img {
+  width: 100%;
+}
+.blog article h3 {
+  font-weight: 300;
+  padding-top: 40px;
+  font-size: 2rem;
+}
+.blog article p {
+  font-weight: 300;
+  padding: 50px 0;
+}
