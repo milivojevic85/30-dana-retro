@@ -11,3 +11,12 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin btn {
+  padding: 15px 30px;
+  background-color: $secondary;
+  border-radius: 5px;
+  border: none;
+  color: $white;
+  font-size: 1rem;
+}

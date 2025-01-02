@@ -11,6 +11,7 @@ header {
       @include flex(row, center, center);
       li {
         a {
+          text-transform: uppercase;
           color: $white;
           margin: 0 20px;
           letter-spacing: 2px;

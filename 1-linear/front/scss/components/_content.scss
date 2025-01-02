@@ -1,0 +1,48 @@
+.intro {
+  padding: $padding;
+  text-align: center;
+  background-color: $gray;
+  h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    padding-bottom: 30px;
+  }
+  a {
+    color: $secondary;
+    text-decoration: underline;
+  }
+  hr {
+    border: none;
+    background-color: #dddddd;
+    height: 1px;
+    margin: 50px auto;
+  }
+  article {
+    @include flex(row, space-between, stretch);
+    div {
+      flex: 0 0 30%;
+      i {
+        font-size: 5rem;
+        color: $iconGray;
+        margin-bottom: 30px;
+      }
+      h3 {
+        font-weight: 300;
+        font-size: 1.6rem;
+      }
+      p{
+        padding: 30px 0;
+        font-size: 1.1rem;
+        line-height: 2;
+      }
+      button {
+        @include btn;
+        transition: $transitions;
+        &:hover {          
+          background-color: #60916c;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
