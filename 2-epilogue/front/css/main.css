@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header hgroup {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header hgroup h1 {
+  font-family: "Pacifico", serif;
+  font-size: 5rem;
+  color: #ffffff;
+}
+header hgroup .hrLine {
+  background-color: #ffffff;
+  height: 1px;
+  margin: 10px auto 50px;
+  width: 100%;
+}
+header hgroup p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #cbcbcb;
+  letter-spacing: 4px;
+  margin: 0 25px;
+}
+header hgroup p a {
+  color: #cbcbcb;
+  text-decoration: underline;
+}

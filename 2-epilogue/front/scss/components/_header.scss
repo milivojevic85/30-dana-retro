@@ -1,0 +1,30 @@
+header {
+  @include backgroundImage((linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/banner.jpg)), center, cover);
+  height: 50vh;
+  @include flex(row, center, center);
+  hgroup {
+    @include flex(column, center, center);
+    h1 {
+      font-family: $hFontFamily;
+      font-size: 5rem;
+      color: $white;
+    }
+    .hrLine {
+      background-color: $white;
+      height: 1px;
+      margin: 10px auto 50px;
+      width: 100%;
+    }
+    p {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: $lightGray;
+      letter-spacing: 4px;
+      margin: 0 25px;
+      a {
+        color: $lightGray;
+        text-decoration: underline;
+      }
+    }
+  }
+}
