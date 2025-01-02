@@ -1,0 +1,35 @@
+footer {
+  padding: $padding;
+  background-color: $primary;
+  color: $white;
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  p {
+    color: $darkGray;
+    font-size: 1.5rem;
+    padding: 30px 0;
+  }
+  div {
+    a {
+      color: $darkGray;
+      margin: 10px;
+      font-size: 2rem;
+      transition: $transitions;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  hr {
+    border: none;
+    background-color: $darkGray;
+    height: 1px;
+    margin: 50px auto;
+  }
+  .copy {
+    font-size: 0.9rem;
+  }
+}
