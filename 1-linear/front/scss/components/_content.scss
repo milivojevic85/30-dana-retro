@@ -67,3 +67,15 @@
     }
   }
 }
+
+.blockquote {
+  @include backgroundImage(url(../img/header.jpg), center, cover);
+  height: 36vh;
+  @include flex(row, center, center);
+  blockquote {
+    color: $white;
+    opacity: .7;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+}
