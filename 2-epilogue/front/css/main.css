@@ -117,3 +117,69 @@ header hgroup p a {
   color: #EF6480;
   border-color: #EF6480;
 }
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog article {
+  flex: 0 0 48%;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+.blog article .featured-image {
+  overflow: hidden;
+  position: relative;
+}
+.blog article .featured-image a {
+  display: block;
+  transition: 0.5s ease;
+}
+.blog article .featured-image a:hover {
+  transform: scale(1.1);
+}
+.blog article .featured-image a img {
+  width: 100%;
+  display: block;
+}
+.blog article .featured-image h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: 0 0 3px #000000;
+  white-space: nowrap;
+}
+.blog article .text {
+  background-color: #ffffff;
+  padding: 75px 65px;
+}
+.blog article .text p {
+  font-size: 1.4rem;
+}
+.blog article .text button {
+  border: 2px solid #666666;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-top: 50px;
+  background-color: transparent;
+  color: #444444;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.blog article .text button:hover {
+  color: #EF6480;
+  border-color: #EF6480;
+}
