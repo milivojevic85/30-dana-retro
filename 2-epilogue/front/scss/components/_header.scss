@@ -6,7 +6,7 @@ header {
     @include flex(column, center, center);
     h1 {
       font-family: $hFontFamily;
-      font-size: 5rem;
+      font-size: 6rem;
       color: $white;
     }
     .hrLine {

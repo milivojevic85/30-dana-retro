@@ -11,3 +11,21 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin btn {
+  border: 2px solid $darkGray;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-top: 50px;
+  background-color: transparent;
+  color: $hText;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    color: $primary;
+    border-color: $primary;
+  }
+}

@@ -7,11 +7,32 @@
 
 body {
   font-family: "Source Sans 3", serif;
-  font-size: 16px;
+  font-size: 18px;
+  background-color: #f4f4f4;
+  color: #848484;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+h2 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 400;
+  margin: 50px 0;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1450px;
+  margin: auto;
 }
 
 header {
@@ -34,7 +55,7 @@ header hgroup {
 }
 header hgroup h1 {
   font-family: "Pacifico", serif;
-  font-size: 5rem;
+  font-size: 6rem;
   color: #ffffff;
 }
 header hgroup .hrLine {
@@ -53,4 +74,46 @@ header hgroup p {
 header hgroup p a {
   color: #cbcbcb;
   text-decoration: underline;
+}
+
+.intro {
+  background-color: #ffffff;
+  padding: 100px 0;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.intro article {
+  width: 44%;
+  text-align: center;
+}
+.intro article i {
+  border: 2px solid #666666;
+  padding: 30px;
+  border-radius: 50%;
+  color: #666666;
+  font-size: 2.4rem;
+}
+.intro article p {
+  font-size: 1.4rem;
+}
+.intro article button {
+  border: 2px solid #666666;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-top: 50px;
+  background-color: transparent;
+  color: #444444;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.intro article button:hover {
+  color: #EF6480;
+  border-color: #EF6480;
 }

@@ -1,0 +1,23 @@
+.intro {
+  background-color: $white;
+  padding: $padding;
+  margin: 100px auto;
+  @include flex(row, center, center);
+  article {
+    width: 44%;
+    text-align: center;
+    i {
+      border: 2px solid $darkGray;
+      padding: 30px;
+      border-radius: 50%;
+      color: $darkGray;
+      font-size: 2.4rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    button {
+      @include btn;
+    }
+  }
+}
