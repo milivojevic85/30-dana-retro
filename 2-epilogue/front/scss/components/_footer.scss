@@ -1,0 +1,49 @@
+footer {
+  text-align: center;
+  @include flex(column, center, center);
+  article {
+    width: 700px;
+    padding-top: 50px;
+    &:nth-child(1) {
+      p {
+        font-size: 1.4rem;
+        padding: 0 100px;
+      }
+      button {
+        @include btn;
+      }
+    }
+    &:nth-child(2) {
+      hr {
+        border: none;
+        background-color: $darkGray;
+        height: 2px;
+        margin: 80px auto;
+        width: 130px;
+      }
+      .icons {
+        margin-top: 100px;
+        a {
+          color: $darkGray;
+          margin: 10px;
+          font-size: 1.5rem;
+          transition: $transition;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        margin-top: 130px;
+        margin-bottom: 40px;
+        b {
+          text-transform: uppercase;
+          color: $black ;
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
