@@ -7,8 +7,19 @@
 body {
   font-family: $fontFamily;
   font-size: $fontSize;
+  color: $text;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: $transition;
+}
+
+li {
+  list-style: none;
 }

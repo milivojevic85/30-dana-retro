@@ -1,0 +1,58 @@
+header {
+  @include backgroundImage((linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/banner.jpg)), top, cover, fixed);
+  height: 800px;
+  nav {
+    @include flex(row, space-between, center);
+    padding: 4rem 3rem;
+    div {
+      @include flex(row, center, center);
+      color: $white;
+      a {
+        color: $white;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+      span {
+        text-transform: uppercase;
+        margin-left: 5px;
+        font-size: 1.2rem;
+      }
+    }
+    ul {
+      li {
+        display: inline-block;
+        margin-left: 3rem;
+        a {
+          color: $white;
+          opacity: .8;
+          font-size: 1.2rem;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .title {
+    @include flex(column, center, center);
+    height: 500px;
+    text-transform: uppercase;
+    color: $white;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    h1 {
+      font-size: 3.2rem;
+    }
+    p {
+      opacity: .6;
+      text-transform: uppercase;
+      padding: 3rem 0;
+      line-height: 1.6;
+      font-size: 1.4rem;
+    }
+    button {
+      @include btn;
+    }
+  }
+}
