@@ -1,0 +1,29 @@
+footer {
+  text-align: center;
+  .icons {
+    background-color: $blockGray;
+    padding: 135px 0;
+    a {
+      font-size: 3rem;
+      color: $text;
+      opacity: .5;
+      margin: 30px;
+      &:hover {
+        color: $headings;
+        opacity: 1;
+      }
+
+    }
+  }
+  .credit {
+    padding: 35px 0;
+    a {
+      text-transform: capitalize;
+      text-decoration: underline;
+      color: $accent;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -111,15 +111,14 @@
 
 .cta {
   @include backgroundImage((linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/banner.jpg)), top, cover, fixed);
-  height: 500px;
-  text-align: center;
+  height: 460px;
+  @include flex(column, space-between, center);
   padding: $paddingY;
   h2 {
     color: $white;
   }
   h4 {
     color: $blockGray;
-    padding: 1.4rem 0;
   }
   button {
     margin-top: 2.8rem;
