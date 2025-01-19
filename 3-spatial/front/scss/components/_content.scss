@@ -18,5 +18,45 @@
       }
     }
   }
+}
 
+.gallery {
+  background-color: $blockGray;
+  padding: $paddingY;
+  text-align: center;
+  .container {
+    @include flex(row, space-between, center);
+    padding-top: 100px;
+    div {
+      flex: 0 0 48%;
+      box-shadow: 0 0 5px rgba($text, .3);
+      background-color: $white;
+      img {
+        width: 100%;
+        display: block;
+      }
+      h3 {
+        text-transform: uppercase;
+        padding: 50px 0;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .buttons {
+    padding-top: 70px;
+    button {
+      @include btn;
+      &:nth-child(2) {
+        margin-left: 20px;
+        background-color: $buttonBlack;
+        border-color: $buttonBlack;
+        &:hover {
+          background-color: $blackHover;
+        }
+        &:active {
+          background-color: $blackActive;
+        }
+      }
+    }
+  }
 }
