@@ -269,3 +269,39 @@ header .title button:active {
   order: 2;
   text-align: left;
 }
+
+.cta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  text-align: center;
+  padding: 100px 0;
+}
+.cta h2 {
+  color: #ffffff;
+}
+.cta h4 {
+  color: #f6f6f6;
+  padding: 1.4rem 0;
+}
+.cta button {
+  margin-top: 2.8rem;
+  border: 2px solid #f32853;
+  border-radius: 5px;
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #f32853;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.cta button:hover {
+  background-color: #f44066;
+}
+.cta button:active {
+  background-color: #f21040;
+}
