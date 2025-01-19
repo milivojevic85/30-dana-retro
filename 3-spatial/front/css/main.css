@@ -215,3 +215,57 @@ header .title button:active {
 .gallery .buttons button:nth-child(2):active {
   background-color: #262429;
 }
+
+.services {
+  padding: 100px 0;
+}
+.services h4 {
+  padding-bottom: 50px;
+}
+.services article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.services article .service {
+  flex: 0 0 47%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+.services article .service .desc {
+  flex: 0 0 64%;
+  text-align: right;
+}
+.services article .service .desc h5 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.services article .service .desc h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  opacity: 0.5;
+  padding-top: 13px;
+}
+.services article .service .desc p {
+  padding: 25px 0;
+}
+.services article .service .pic {
+  flex: 0 0 25%;
+}
+.services article .service .pic img {
+  width: 100%;
+  border-radius: 50%;
+  border: 8px solid rgba(102, 102, 102, 0.15);
+  display: block;
+}
+.services article .service:nth-child(even) .desc {
+  order: 2;
+  text-align: left;
+}

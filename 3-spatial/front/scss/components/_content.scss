@@ -60,3 +60,51 @@
     }
   }
 }
+
+.services {
+  padding: $paddingY;
+  h4 {
+    padding-bottom: 50px;
+  }
+  article {
+    @include flex(row, space-between, center);
+    .service {
+      flex: 0 0 47%;
+      @include flex(row, space-between, flex-start);
+      padding-top: 50px;
+      .desc {
+        flex: 0 0 64%;
+        text-align: right;
+        h5 {
+          font-size: 1.2rem;
+          text-transform: uppercase;
+        }
+        h6 {
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 400;
+          opacity: .5;
+          padding-top: 13px;
+        }
+        p {
+          padding: 25px 0;
+        }
+      }
+      .pic {
+        flex: 0 0 25%;
+        img {
+          width: 100%;
+          border-radius: 50%;
+          border: 8px solid rgba($text, 0.15);
+          display: block;
+        }
+      }
+      &:nth-child(even) {
+        .desc {
+          order: 2;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
